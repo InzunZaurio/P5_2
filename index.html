@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 5</title>
+</head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+    <h1>Recomendaciones muy recomendadas</h1>
+    <h2>Ingresa una frase clave para buscar libros que se adapten a esta</h2>
+    <form onsubmit="submitForm(event)">
+        <label for="userPhrase">Ingrese una frase:</label>
+        <input type="text" id="userPhrase" name="userPhrase" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            var userPhrase = document.getElementById('userPhrase').value;
+
+            fetch('http://localhost:8080/?userPhrase=' + encodeURIComponent(userPhrase))
+                .then(response => response.text())  // Parsear la respuesta como texto
+                .then(result => {
+                    document.getElementById('result').innerText = result;
+                })
+                .catch(error => {
+                    console.error('Error en la solicitud:', error);
+                });
+        }
+    </script>
+</body>
+</html>
