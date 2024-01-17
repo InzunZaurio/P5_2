@@ -1,3 +1,10 @@
+//      Ramirez Inzunza Pedro Miguel - 7CM3
+//      Sistemas Distribuidos - Proyecto 5
+//      Clase WebServer: Encargada de ser la mediadora entre la comunicación con el cliente
+// }    web y con los servidores de procesamiento.
+
+
+
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;

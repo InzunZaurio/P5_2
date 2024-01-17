@@ -1,3 +1,9 @@
+//      Ramirez Inzunza Pedro Miguel - 7CM3
+//      Sistemas Distribuidos - Proyecto 5
+//      Clase ProcessingServer: Encargada de ser la que desmenuza el texto y lo compara con los textos
+//      además de dar el índice de recomendación. Más información en cada comentario.
+//      Luego, regresa el resultado de índice de recomendación al WebServer para que este lo mande al cliente Web
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

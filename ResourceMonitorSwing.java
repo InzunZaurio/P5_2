@@ -1,3 +1,9 @@
+//      Ramirez Inzunza Pedro Miguel - 7CM3
+//      Sistemas Distribuidos - Proyecto 5
+//      Clase ResourceMonitorSwing: Encargada de ser la clase que monitoriza y muestra el uso de
+//      memoria y CPU de las clases WebServer y ProcessingServer. El nombre proviene del uso de los
+//      métodos nativos de java en Swing.
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
